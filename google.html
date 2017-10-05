@@ -20,14 +20,13 @@
 			</ul>
 		</nav>
 
-		<div class="centre">
-			<img id="reduire" src="logo/google.png" alt="logo google" />
-			<p>France</p>
-			
+		<div class="centre" id="hide" style="display: none;"> <!--logo google son image-->
+			<img class="hide" id="reduire" src="logo/google.png" alt="logo google" />
+			<p class="hide" >France</p>
 		</div>
 		<form>
-			<input type="text" name="search" placeholder="Search..">
-			<div class="ordre">
+			<input style="display: none;" type="text" name="search" placeholder="Search.." onfocus="ta_fonction_en_javascript();">
+			<div style="display: none; " class="ordre">
 				<input class="police" type="submit" value="Recherche Google">
 				<a href="https://www.google.com/doodles">
 				<input class="police" type="button" value= "J'ai de la chance" /></a>
@@ -43,5 +42,7 @@
 				<li><a href="https://www.google.fr/intl/fr/policies/terms/regional.html">Conditions</a></li>
 			</ul>
 		</footer>
+		<button onclick= "toggleVisibility('hide')">AFFICHER LES ÉLÉMENTS CENTRAUX</button>
+	<script src="main.js"></script>
 	</body>
 </html>

@@ -111,3 +111,8 @@ footer
 	background-color: rgb(240,240,240);
 	border-top: 1px rgb(230,230,230) solid; 
 }
+
+button
+{
+	left: 20px;
+}
